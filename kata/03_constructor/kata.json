@@ -1,0 +1,9 @@
+{
+	"id": "constructor",
+	"module": "oo",
+	"title": "Constructor Method",
+	"solutionFile": "Task.cfc",
+	"testFile": "Tests.cfc",
+	"solutionTestFile": "Tests.cfc",
+	"otherFiles": []
+}

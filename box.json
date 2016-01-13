@@ -1,0 +1,87 @@
+{
+    "name":"cfdojo-module-oo",
+    "version":"0.0.0",
+    "author":"",
+    "location":"",
+    "directory":"modules",
+    "createPackageDirectory":true,
+    "packageDirectory":"oo",
+    "homepage":"",
+    "documentation":"",
+    "repository":{
+        "type":"",
+        "URL":""
+    },
+    "bugs":"",
+    "slug":"cfdojo-module-oo",
+    "shortDescription":"A Object-Oriented CFML Training Module for CF Dojo",
+    "description":"",
+    "instructions":"",
+    "changelog":"",
+    "type":"",
+    "keywords":[
+        
+    ],
+    "private":false,
+    "engines":[
+        {
+            "type":"",
+            "version":""
+        }
+    ],
+    "defaultEngine":"",
+    "defaultPort":0,
+    "projectURL":"",
+    "license":[
+        {
+            "type":"",
+            "URL":""
+        }
+    ],
+    "contributors":[
+        
+    ],
+    "dependencies":{
+        
+    },
+    "devDependencies":{
+        
+    },
+    "installPaths":{
+        
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ],
+    "testbox":{
+        "runner":[
+            {
+                "default":""
+            }
+        ],
+        "labels":[
+            
+        ],
+        "reporter":"",
+        "reporterResults":"",
+        "bundles":[
+            ""
+        ],
+        "directory":{
+            "mapping":"",
+            "recurse":true
+        },
+        "watchers":[
+            
+        ],
+        "notify":{
+            "emails":[
+                
+            ],
+            "growl":"",
+            "URL":""
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+	"id": "inheritance",
+	"module": "oo",
+	"title": "Inheritance",
+	"solutionFile": "Employee.cfc",
+	"testFile": "EmployeeTests.cfc",
+	"solutionTestFile": "EmployeeTests.cfc",
+	"dependencies": ["User.cfc"]
+}

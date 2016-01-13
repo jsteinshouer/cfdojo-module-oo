@@ -1,0 +1,9 @@
+{
+	"id": "gateways",
+	"module": "oo",
+	"title": "Gateways",
+	"solutionFile": "BookGateway.cfc",
+	"testFile": "BookGatewayTest.cfc",
+	"solutionTestFile": "BookGatewayTest.cfc",
+	"dependencies": ["Book.cfc"]
+}

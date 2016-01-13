@@ -1,0 +1,9 @@
+{
+	"id": "dao",
+	"module": "oo",
+	"title": "Data Access Objects",
+	"solutionFile": "BookDAO.cfc",
+	"testFile": "BookDAOTest.cfc",
+	"solutionTestFile": "BookDAOTest.cfc",
+	"dependencies": ["Book.cfc"]
+}

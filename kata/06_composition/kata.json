@@ -1,0 +1,9 @@
+{
+	"id": "composition",
+	"module": "oo",
+	"title": "Composition",
+	"solutionFile": "Car.cfc",
+	"testFile": "CarUserTest.cfc",
+	"solutionTestFile": "CarTest.cfc",
+	"dependencies": ["Brakes.cfc","Engine.cfc","Transmission.cfc"]
+}

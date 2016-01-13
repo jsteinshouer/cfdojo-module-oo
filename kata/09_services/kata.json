@@ -1,0 +1,9 @@
+{
+	"id": "services",
+	"module": "oo",
+	"title": "Service Layer",
+	"solutionFile": "BookService.cfc",
+	"testFile": "BookServiceTest.cfc",
+	"solutionTestFile": "BookServiceTest.cfc",
+	"dependencies": ["Book.cfc","BookDAO.cfc","BookGateway.cfc"]
+}

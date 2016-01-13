@@ -1,0 +1,9 @@
+{
+	"id": "accessors",
+	"module": "oo",
+	"title": "Accessors",
+	"solutionFile": "Task.cfc",
+	"testFile": "Tests.cfc",
+	"solutionTestFile": "Tests.cfc",
+	"otherFiles": []
+}

@@ -1,0 +1,9 @@
+{
+	"id": "intro",
+	"title": "Introduction to Object-Oriented Programming in Coldfusion",
+	"module": "oo",
+	"solutionFile": "Greeting.cfc",
+	"testFile": "Tests.cfc",
+	"solutionTestFile": "Tests.cfc",
+	"otherFiles": []
+}
