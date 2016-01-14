@@ -51,9 +51,7 @@
         
     },
     "ignore":[
-        "**/.*",
-        "test",
-        "tests"
+        "**/.*"
     ],
     "testbox":{
         "runner":[
