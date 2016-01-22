@@ -71,6 +71,63 @@ component {
 
 		// module settings - stored in modules.name.settings
 		settings = {
+
+			kata = [
+				{
+					id = "intro",
+					title = "Intro",
+					description = "Introduction to Object-Oriented Programming in Coldfusion",
+					path = "kata/01_intro"
+				},
+				{
+					id = "beans",
+					title = "Beans",
+					description = "What is a Bean?",
+					path = "kata/02_beans"
+				},
+				{
+					id = "constructor",
+					title = "Constructor",
+					description = "Constructor",
+					path = "kata/03_constructor"
+				},
+				{
+					id = "accessors",
+					title = "Accessors",
+					description = "Property accessors",
+					path = "kata/04_accessors"
+				},
+				{
+					id = "inheritance",
+					title = "Inheritance",
+					description = "IS A Relationships",
+					path = "kata/05_inheritance"
+				},
+				{
+					id = "composition",
+					title = "Composition",
+					description = "HAS A Relationships",
+					path = "kata/06_composition"
+				},
+				{
+					id = "dao",
+					title = "Data Access Objects",
+					description = "Database CRUD",
+					path = "kata/07_dao"
+				},
+				{
+					id = "gateways",
+					title = "Gateways",
+					description = "Working with record sets",
+					path = "kata/08_gateways"
+				},
+				{
+					id = "services",
+					title = "Services",
+					description = "Service Layer",
+					path = "kata/09_services"
+				}
+			]
 			
 		};
 
@@ -88,6 +145,9 @@ component {
 		routes = [
 			// Module Entry Point
 			{pattern="/", handler = "kata", action="list" },
+			{pattern="/kata/:id/run", handler = "kata", action="run" },
+			{pattern="/kata/:id/submit", handler = "kata", action="submit" },
+			{pattern="/kata/:id", handler = "kata", action="index" },
 			// Convention Route
 			{pattern="/:handler/:action?"}
 		];
@@ -110,44 +170,7 @@ component {
 	* Fired when the module is registered and activated.
 	*/
 	function onLoad(){
-		/* Make sure data is loaded into the db. TODO: make this dynamic */
-		queryExecute("
 
-				MERGE INTO modules (id,title,description)
-				VALUES('oo','Object-Oriented Programing 101','Kata to learn Object-Oriented programing concepts in CFML')
-				;
-				
-				MERGE INTO kata (id,title,description,f_module_id,display_order)
-				VALUES('intro','Intro','Introduction to Object-Oriented Programming in Coldfusion','oo',1);
-
-				MERGE INTO kata (id,title,description,f_module_id,display_order)
-				VALUES('beans','Beans','What is a Bean','oo',2);
-
-				MERGE INTO kata (id,title,description,f_module_id,display_order)
-				VALUES('constructor','Constructor','Constructor Method','oo',3);
-
-				MERGE INTO kata (id,title,description,f_module_id,display_order)
-				VALUES('accessors','Accessors','Property accessors','oo',4);
-
-				MERGE INTO kata (id,title,description,f_module_id,display_order)
-				VALUES('inheritance','Inheritance','IS A Relationships','oo',5);
-
-				MERGE INTO kata (id,title,description,f_module_id,display_order)
-				VALUES('composition','Composition','HAS A Relationships','oo',6);
-
-				MERGE INTO kata (id,title,description,f_module_id,display_order)
-				VALUES('dao','Data Access Objects','Database CRUD','oo',7);
-
-				MERGE INTO kata (id,title,description,f_module_id,display_order)
-				VALUES('gateways','Gateways','Working with record sets','oo',8);
-
-				MERGE INTO kata (id,title,description,f_module_id,display_order)
-				VALUES('services','Services','Service Layer','oo',9);
-
-			",
-			{},
-			{datasource = "cfdojo"}
-		);
 	}
 
 	/**
