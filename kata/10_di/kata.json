@@ -1,0 +1,9 @@
+{
+	"id": "di",
+	"title": "Dependency Injection",
+	"module": "oo",
+	"solutionFile": "MySolution.cfc",
+	"testFile": "MyTests.cfc",
+	"solutionTestFile": "SolutionTests.cfc",
+	"dependencies": ["Book.cfc","BookDAO.cfc","BookGateway.cfc","BookService.cfc","MyBinder.cfc"]
+}

@@ -126,6 +126,12 @@ component {
 					title = "Services",
 					description = "Service Layer",
 					path = "kata/09_services"
+				},
+				{
+					id = "di",
+					title = "Dependecy Injection",
+					description = "Inversion of Control",
+					path = "kata/10_di"
 				}
 			]
 			
@@ -162,7 +168,6 @@ component {
 		];
 
 		// Binder Mappings
-		// binder.map("Alias").to("#moduleMapping#.model.MyService");
 
 	}
 
